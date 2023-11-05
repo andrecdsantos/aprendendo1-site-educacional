@@ -1,0 +1,150 @@
+@media screen and (max-width: 1024px) { /* notebook */
+    
+}
+
+@media screen and (max-width: 768px) {/* tablets ipads */
+    .logo {
+        flex:1
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu__mobile{
+        display: flex;
+        padding: 0 10px;
+        font-weight: bold;
+        top:0;
+        right: 5px;
+    }
+
+    /* nav {
+        justify-content: flex-end;
+    }
+
+    .menu__mobile .ativado{
+        display: flex;
+        padding: 0 10px;
+        font-weight: bold;
+        top:0;
+        right: 5px;
+    }
+
+    .ativado{
+        z-index: 1;
+        background: red;
+        
+    }
+    .menu .ativado{
+        background: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--primary-color);
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+    section:nth-child(1), section:nth-child(2), section:nth-child(3) {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    
+
+    .conteudo {
+        align-items: center;
+        justify-content: flex-start;
+        flex: 0;
+    }
+
+    .conteudo > * {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #img__conteudo, #imagem__conta-gratuita {
+        order: -1;
+        
+    }
+
+    .imagem {
+        background-size: cover;
+        width: 100%;
+        min-height: 500px;
+    }
+
+    
+    .btn-inscrever {
+        height: 53px;
+        width: 150px;
+    }
+
+    .section__comunidade {
+        background-size: 90%;
+        background-repeat: no-repeat;
+        /* background-position: right; */
+    }
+    .img1, .img3 {
+        display: none;
+    }
+
+    
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer > div {
+        margin: 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 640px) { /* 480px? */
+
+    
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, .btn-inscrever{
+        height: 53px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .section__comunidade {
+        background-size: 70%;
+        background-position-x: right;
+        padding-bottom: 400px;
+    }
+
+    .comunidade {
+        max-width: 60%;
+    }
+
+    .comunidade > * {
+        margin-bottom: 20px;
+    }
+
+    .img2, .img4 {
+        display: none;
+    }
+
+    @media screen and (max-width: 480px) { 
+        .section__comunidade {
+            background-size: 70%;
+            background-position-x: 150px;/* horizontal */
+            background-position-y: 250px;/* vertical */
+            /* background-position: right; */
+        }
+    }
+
+}

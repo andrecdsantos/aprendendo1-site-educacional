@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;   
+}
+
+body{
+    width: 100%;
+}
+
+header {
+    background: var(--primary-color);
+    display: flex;
+    padding: 2% 10%;
+}
+
+h1 {
+    font-family: "Jim Nightshade", sans-serif;
+    font-size: 40px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.menu__mobile {
+    display: none;
+    position: absolute;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu li:nth-child(3)::after{
+    content: "\276F";  /* &#10095; */
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+ul li {
+    position: relative;
+}
+
+
+
+ul li .dropdown {
+    display: none;
+    list-style: none;
+    padding: 0 10px;
+    position: absolute;
+    top: 100%;
+    transition: 0.5s;
+}
+
+.dropdown li:nth-child(3)::after{
+    content: "";  /* tirando o icone de seta para baixo da opcao 3*/
+}
+
+ul li:hover .dropdown {
+    background: var(--primary-color);
+    display: block;
+    width: 200px;
+}
+
+.dropdown li:hover {
+    background: var(--orange);
+    border: 1px solid #000;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.btn {
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+}
+
+.btn-contato {
+    background: var(--orange);
+}
+
+main {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+section {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin: 50px 0;
+}
+
+section > * {
+    flex: 1; /* faz com que os filhos ocupem o mesmo espaço igualmente */
+    /* nao esta dividindo igualmente por causa do padding 5% em conteudo */
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.btn-aprender {
+    background: var(--brown);
+    width: fit-content;
+}
+
+.imagem {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    background: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;    
+    padding: 5% 0;
+}
+
+input {
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn-inscrever {
+    align-items: center;
+    background: var(--orange);
+    color: #fff;
+    display: flex;
+    font-weight: 700;
+    height: 63px;
+    justify-content: center;
+    width: 200px;
+}
+
+.section__comunidade {
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.comunidade {
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    justify-content: space-around;
+    left: 60px;
+    max-width: 40%;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    z-index: 1;
+}
+
+.btn-comunidade {
+    background: var(--yellow);
+}
+
+.img__pequena {
+    display: flex;
+    position: absolute;
+}
+
+.img1 {
+    top: 50%;
+    left: 5%;
+}
+.img2 {
+    top:70%;
+    left: 15%;
+}
+.img3 {
+    top:1%;
+    left: 45%;
+}
+.img4 {
+    top:25%;
+    left: 80%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+    padding: 0 10%;
+}
+
+
+.footer{
+    display: flex;
+    padding: 30px 0;
+}
+.logo__footer{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer > div {
+    flex:1;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    font-size: 15px;
+    margin: 5% 0;
+}
+
+.lista__contatos{
+    list-style: none;
+}
+
+.direitos-reservados {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
