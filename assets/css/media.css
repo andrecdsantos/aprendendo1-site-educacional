@@ -11,42 +11,46 @@
         display: none;
     }
 
+    .menu li {
+        margin-bottom: 15px;
+    }
+
     .menu__mobile{
         display: flex;
         padding: 0 10px;
         font-weight: bold;
         top:0;
         right: 5px;
+        z-index: 2;
     }
 
-    /* nav {
-        justify-content: flex-end;
-    }
-
-    .menu__mobile .ativado{
+    ul.ativado{
         display: flex;
-        padding: 0 10px;
-        font-weight: bold;
-        top:0;
-        right: 5px;
-    }
-
-    .ativado{
-        z-index: 1;
-        background: red;
-        
-    }
-    .menu .ativado{
         background: green;
         position: absolute;
         top: 0;
         left: 0;
         background: var(--primary-color);
         height: 100vh;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    } */
+        z-index: 1;
+    }
+
+    ul li:hover .dropdown {/* tirando o submenu */
+        display: none;
+    }
+
+    .menu li:nth-child(3)::after{/* tirando o icone do submenu */
+        content: "";  
+    }
+
+    .icon__submenu {/* tirando o icone do submenu */
+        display: none;
+    }
+
     section:nth-child(1), section:nth-child(2), section:nth-child(3) {
         flex-direction: column;
         margin: 20px 0;
