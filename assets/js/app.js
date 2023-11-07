@@ -3,6 +3,14 @@ import '../css/global.css';
 import '../css/reset.css'; 
 import '../css/style.css'; 
 import '../css/media.css'; 
+import '../images/hero.png'; 
+import '../images/estudante1.png'; 
+import '../images/estudante2.png'; 
+import '../images/estudante3.png'; 
+import '../images/circulo-estudante1.png'; 
+import '../images/circulo-estudante2.png'; 
+import '../images/circulo-estudante3.png'; 
+import '../images/circulo-estudante4.png'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('h1').innerText = title;
