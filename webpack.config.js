@@ -22,19 +22,31 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            name: '[name].[ext]'
+                        }
+                    }
+                ],
+                exclude: path.resolve(__dirname, 'index.html'),
+            },
+            {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: './assets/images',
-                            publicPath: './assets/images'
+                            outputPath: '/assets/images',
+                            publicPath: '/assets/images'
                         }
                     }
                 ]
             },
-            {
+            /* {
                 test: /\.html$/,
                 use: [
                     {
@@ -45,7 +57,7 @@ module.exports = {
                     }
                 ],
                 exclude: path.resolve(__dirname, 'index.html'),
-            },
+            }, */
         ],
     },
     plugins: [
