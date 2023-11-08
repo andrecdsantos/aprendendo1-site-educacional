@@ -33,12 +33,17 @@ module.exports = {
                 ],
                 exclude: path.resolve(__dirname, 'index.html'),
             },
+
+            
+
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
                     {
                         loader: 'file-loader',
+                        loader: 'url-loader',
                         options: {
+                            limit: 8192,
                             name: '[name].[ext]',
                             outputPath: '/assets/images',
                             publicPath: '/assets/images',
@@ -47,6 +52,8 @@ module.exports = {
                     }
                 ]
             },
+
+
             /* {
                 test: /\.html$/,
                 use: [

@@ -13,7 +13,7 @@ import '../images/circulo-estudante3.png';
 import '../images/circulo-estudante4.png'; 
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('img').src = img;
+    document.querySelector('img').src = '../images/circulo-estudante1.png';
     document.querySelector('h1').innerText = title;
 
     const sectionComunidade = document.querySelector('.section__comunidade');
