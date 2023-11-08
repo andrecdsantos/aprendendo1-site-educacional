@@ -7,12 +7,13 @@ import '../images/hero.png';
 import '../images/estudante1.png'; 
 import '../images/estudante2.png'; 
 import '../images/estudante3.png'; 
-import '../images/circulo-estudante1.png'; 
-import '../images/circulo-estudante2.png'; 
+import img from '../images/circulo-estudante1.png'; 
+import img2 from '../images/circulo-estudante2.png'; 
 import '../images/circulo-estudante3.png'; 
 import '../images/circulo-estudante4.png'; 
 
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('img').src = img;
     document.querySelector('h1').innerText = title;
 
     const sectionComunidade = document.querySelector('.section__comunidade');
